@@ -1,0 +1,19 @@
+html,
+body {
+  font-family: "Tajawal", "Cairo", "Segoe UI", Tahoma, sans-serif;
+}
+
+.app-body {
+  background-color: var(--app-bg);
+  min-height: 100vh;
+}
+
+main.container {
+  max-width: 860px;
+}
+
+@media (max-width: 576px) {
+  .clean-card .card-body {
+    padding: 1rem;
+  }
+}

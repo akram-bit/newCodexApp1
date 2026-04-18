@@ -1,0 +1,9 @@
+:root {
+  --app-bg: #f5f7fb;
+  --app-border: #e9edf5;
+  --app-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.text-note {
+  color: #6c757d;
+}
