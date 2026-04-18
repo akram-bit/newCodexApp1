@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل الدخول | المرحلة 0</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/utilities.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body class="app-body" data-page="login">
+    <div id="app-shell"></div>
+
+    <main class="container py-4">
+      <section class="card clean-card">
+        <div class="card-body">
+          <h1 class="h4 mb-3">صفحة تسجيل الدخول (واجهة تمهيدية)</h1>
+          <p class="text-secondary mb-3">
+            هذه واجهة أولية فقط ضمن المرحلة 0. لم يتم تفعيل تسجيل الدخول الحقيقي بعد.
+          </p>
+          <form class="vstack gap-3" novalidate>
+            <div>
+              <label class="form-label" for="email">البريد الإلكتروني</label>
+              <input class="form-control" id="email" type="email" placeholder="name@example.com" disabled />
+            </div>
+            <div>
+              <label class="form-label" for="password">كلمة المرور</label>
+              <input class="form-control" id="password" type="password" placeholder="••••••••" disabled />
+            </div>
+            <button class="btn btn-outline-primary" type="button" disabled>دخول (غير مفعل في هذه المرحلة)</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/app.js"></script>
+  </body>
+</html>
