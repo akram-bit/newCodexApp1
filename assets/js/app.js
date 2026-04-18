@@ -4,15 +4,7 @@ import { setStatusMessage } from "./utils/helpers.js";
 
 async function loadLocalConfigIfExists() {
   try {
-    const response = await fetch("./assets/js/config.local.js", { cache: "no-store" });
-
-    if (!response.ok) {
-      return false;
-    }
-
-    const scriptText = await response.text();
-    const run = new Function(scriptText);
-    run();
+    await import(`./config.local.js?ts=${Date.now()}`);
     return true;
   } catch (_error) {
     return false;
